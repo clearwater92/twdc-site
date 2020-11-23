@@ -1,0 +1,14 @@
+.header {
+    .menu {
+        &__list {
+            list-style: none;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &__item {
+            display: inline-block;
+            margin: 1rem;
+        }
+    }
+}
