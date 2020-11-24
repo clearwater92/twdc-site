@@ -1,4 +1,9 @@
 .header {
+    height: 80vh;
+    background-image: url(../img/twdc-1.jpg);
+    background-size: cover;
+    background-position: top;
+
     .menu {
         &__list {
             list-style: none;
@@ -9,6 +14,14 @@
         &__item {
             display: inline-block;
             margin: 1rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    .search {
+        &__icon {
+            font-size: 3rem;
+            display: inline-block;
         }
     }
 }
