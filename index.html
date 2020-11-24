@@ -22,7 +22,9 @@
             </div>
             <div class="col-1-of-6">
                 <a class="site-logo" href="" res="home">
-                    <img src="img/disney-logo.svg" alt="" class="twdc-logo">
+                    <svg class="header__disney-logo">
+                        <use xlink:href="img/disney-logo.svg"></use>
+                    </svg>
                 </a>
             </div>
             <div class="col-1-of-3">
@@ -32,9 +34,9 @@
                 </ul>
             </div>
             <div class="col-1-of-12">
-                <div class="search">
-                    <i class="search__icon icon-basic-magnifier"></i>
-                </div>
+                <svg class="search__icon">
+                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
             </div>
         </div>
         <div class="header__text-box">
@@ -42,7 +44,16 @@
         </div>
     </header>
     <main>
-
+        <section class="section-features">
+            <h2 class="heading-secondary">Recent News</h2>
+            <div class="feature-box">
+                <img class="feature-box__photo" src="img/twdc-2.jpg" alt="">
+                <h1 class="feature-box__text-box">
+                    <span class="feature-box__text-box--date">November 19, 2020</span>
+                    <h3 class="heading-tertiary feature-box__text-box--entry-title">Disney Parks Receives Industry Honors</h3>
+                </h1>
+            </div>
+        </section>
     </main>
     <!--
     <section class="grid-test">

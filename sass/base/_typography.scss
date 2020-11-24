@@ -1,0 +1,25 @@
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 3px 3px 10px #000;
+    letter-spacing: 1rem;
+    //box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.heading-secondary {
+    color: $color-black;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}

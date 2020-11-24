@@ -1,0 +1,11 @@
+.feature-box {
+    //@include absCenter;
+    background-color: $color-white;
+    border-radius: 3px;
+    text-align: center;
+
+    &__photo {
+        height: 41.7rem;
+        width: 27.6rem;
+    }
+}

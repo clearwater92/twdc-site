@@ -1,8 +1,14 @@
 .header {
-    height: 80vh;
+    height: 95vh;
     background-image: url(../img/twdc-1.jpg);
     background-size: cover;
     background-position: top;
+
+    &__disney-logo {
+        height: 2.25rem;
+        width: 2.25rem;
+        fill: $color-grey-dark;
+    }
 
     .menu {
         &__list {
@@ -20,8 +26,9 @@
 
     .search {
         &__icon {
-            font-size: 3rem;
-            display: inline-block;
+            height: 2.25rem;
+            width: 2.25rem;
+            fill: $color-grey-dark;
         }
     }
 }
