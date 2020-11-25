@@ -1,43 +1,61 @@
 .feature-boxes {
-    //@include absCenter;
     max-width: 70rem;
     background-color: $color-white;
     border-radius: 3px;
     position: relative;
     overflow: hidden;
-    //text-align: center;
-
-
-
-    .feature-box {
-        display: none;
-        position: relative;
-        height: 41.7rem;
-
-        &__photo {
-            position: absolute;
-            height: 41.7rem;
-            width: 100%;
-            bottom: 0;
-            left: 0;
-            
-    
-            font-size: 3rem;
-        }
-    
-        &__text-box {
-    
-        }
-    }
-
-
-    .feature-box.active {
-        display: block;
-    }
-    
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
+.feature-box {
+    display: none;
+    position: relative;
+    height: 41.7rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    transition: left .3s ease-in;
+
+    &__picture {
+        position: absolute;
+        background-size: cover;
+        height: 35.7rem;
+        width: 100%;
+        font-size: 3rem;
+
+        &--1 {
+            background-image: url(../img/twdc-2.jpg);
+        }
+        &--2 {
+            background-image: url(../img/twdc-3.jpg);
+        }
+        &--3 {
+            background-image: url(../img/twdc-4.jpg);
+        }
+        &--4 {
+            background-image: url(../img/twdc-5.jpg);
+        }
+        &--5 {
+            background-image: url(../img/twdc-6.jpg);
+        }
+    }
+
+    &__text-box {
+        padding: 2rem;
+        transform: translateY(35rem);
+    }
+
+    &.active {
+        display: block;
+    }
+}
+
+
 .feature-slider {
+    
+    position: relative;
 
     &__left-slide,
     &__right-slide {
@@ -50,7 +68,7 @@
         font-size: 2rem;
         top: 50%;
         cursor: pointer;
-
+        line-height: 4rem;
         text-align: center;
 
     }

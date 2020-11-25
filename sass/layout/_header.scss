@@ -1,8 +1,16 @@
 .header {
-    height: 80vh;
+    height: 50rem;
+    width: 100%;
     background-image: url(../img/twdc-1.jpg);
     background-size: cover;
     background-position: top;
+
+    &__disney-logo {
+        height: 10rem;
+        width: 10rem;
+        background-image: url(../img/walt-disney-logo.svg);
+        background-size: cover;
+    }
 
     .menu {
         &__list {
@@ -15,6 +23,7 @@
             display: inline-block;
             margin: 1rem;
             font-size: 1.6rem;
+            color: $color-white;
         }
     }
 
@@ -26,4 +35,20 @@
             fill: $color-grey-dark-1;
         }
     }
+}
+
+.site-header-nav:hover {
+    background-color: $color-white;
+    transition: all .6s;
+}
+
+.site-header-nav:hover li {
+    color: $color-black;
+    transition: all .6s;
+}
+
+.navi {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
