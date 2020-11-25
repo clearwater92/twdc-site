@@ -1,11 +1,71 @@
-.feature-box {
+.feature-boxes {
     //@include absCenter;
+    max-width: 70rem;
     background-color: $color-white;
     border-radius: 3px;
-    text-align: center;
+    position: relative;
+    overflow: hidden;
+    //text-align: center;
 
-    &__photo {
+
+
+    .feature-box {
+        display: none;
+        position: relative;
         height: 41.7rem;
-        width: 27.6rem;
+
+        &__photo {
+            position: absolute;
+            height: 41.7rem;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            
+    
+            font-size: 3rem;
+        }
+    
+        &__text-box {
+    
+        }
+    }
+
+
+    .feature-box.active {
+        display: block;
+    }
+    
+}
+
+.feature-slider {
+
+    &__left-slide,
+    &__right-slide {
+        position: absolute;
+        height: 4rem;
+        width: 4rem;
+        background-color: $color-grey-dark-2;
+        border-radius: 50%;
+        color: $color-white;
+        font-size: 2rem;
+        top: 50%;
+        cursor: pointer;
+
+        text-align: center;
+
+    }
+
+    &__left-slide:hover,
+    &__right-slide:hover {
+        box-shadow: 0px 0px 10px $color-black;
+        background-color: $color-skyblue;
+    }
+
+    &__left-slide {
+        left: 3rem;
+    }
+    
+    &__right-slide {
+        right: 3rem;
     }
 }
