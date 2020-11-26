@@ -1,0 +1,15 @@
+.contact-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-white;
+    padding: 5rem;
+    width: 70rem;
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0, .7);
+    transition: .5s;
+}
+
+.hidden {
+    display: none;
+}
