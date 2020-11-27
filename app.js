@@ -1,8 +1,8 @@
-var slides = document.querySelector('.feature-boxes').children;
-var nextSlide = document.querySelector(".feature-slider__right-slide");
-var prevSlide = document.querySelector(".feature-slider__left-slide");
-var totalSlides = slides.length;
-var index = 0;
+let slides = document.querySelector('.feature-boxes').children;
+const nextSlide = document.querySelector(".feature-slider__right-slide");
+const prevSlide = document.querySelector(".feature-slider__left-slide");
+let totalSlides = slides.length;
+let index = 0;
 
 nextSlide.onclick = function () {
     next("next");
@@ -34,7 +34,7 @@ function next(direction) {
 }
 
 //Modal
-var modal = document.querySelector('.contact-form');
+let modal = document.querySelector('.contact-form');
 document.querySelector('#open').addEventListener('click', function(){
     modal.classList.remove('hidden');
 });
