@@ -33,7 +33,7 @@ function next(direction) {
 
 }
 
-let modal = document.querySelector('.contact-form');
+let modal = document.querySelector('.contact');
 
 document.querySelector('#open').addEventListener('click', function(){
     modal.classList.remove('hidden');
