@@ -16,6 +16,22 @@
     backface-visibility: hidden;
     text-align: center;
     font-size: 4rem;
+    position: relative;
+}
+
+.heading-secondary.has-gradient::after{
+    background-color: #ffc029;
+    background-image: -webkit-gradient(linear,left top,right top,from(#ffc029),to(#4cd8b0));
+    background-image: linear-gradient(90deg,#ffc029,#4cd8b0);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: .23rem;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 100px;
 }
 
 .heading-tertiary {

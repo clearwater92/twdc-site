@@ -34,7 +34,7 @@ function next(direction) {
 }
 
 //Modal
-var modal = document.querySelector('.contact-form');
+var modal = document.querySelector('.contact');
 document.querySelector('#open').addEventListener('click', function(){
     modal.classList.remove('hidden');
 });
