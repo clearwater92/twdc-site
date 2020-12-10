@@ -3,7 +3,6 @@
     top: 0;
     width: 100%;
     height: 50rem;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +27,6 @@
             text-align: center;
         }
 
-        //transform: translateY(35rem);
     }
 }
 
@@ -46,7 +44,6 @@
     &__btn {
         position: absolute;
         top: 50%;
-
         color: $color-grey-dark-1;
         background: rgba($color-white, 0.7);
         outline: none;
